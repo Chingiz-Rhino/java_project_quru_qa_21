@@ -31,6 +31,9 @@ public class Main {
         long d = 1234455768;
         d -= 15;
         System.out.println("Перегрузка long: " + d);
+        char e = 'a';
+        e +=1244;
+        System.out.println("Перегрузка char: " + e);
 
         // Математические операции
         int plus = 30;
@@ -48,5 +51,35 @@ public class Main {
         int remainder = 30;
         int mathRemainder = remainder % 7;
         System.out.println("Математическая операция 'Остаток от деления': " + mathRemainder );
+
+        // Инкремент и декремент
+        int increment = 10;
+        int decrement = 11;
+        increment--;
+        decrement++;
+        System.out.println("Инкремент: " + increment);
+        System.out.println("Декремент: " + decrement);
+
+       // Логические операции
+        int first = 5;
+        int second = 10;
+
+        System.out.println("first == second: " + (first == second));
+        System.out.println("first > second: " + (first > second));
+        System.out.println("first < second: " + (first < second));
+        System.out.println("first != second: " + (first != second));
+        System.out.println("first >= second: " + (first >= second));
+        System.out.println("first <= second: " + (first <= second));
+
+        // Проверка комбинаций типов данных int и double
+        int checkInt = 20;
+        double checkDouble = 2.5;
+        System.out.println("Проверка сложения int и double: " + (checkInt+checkDouble));
+        System.out.println("Проверка вычитания int и double: " + (checkInt-checkDouble));
+        System.out.println("Проверка умножения int и double: " + (checkInt*checkDouble));
+        System.out.println("Проверка деления int и double: " + (checkInt/checkDouble));
+        System.out.println("Проверка остатка int и double: " + (checkInt%checkDouble));
+
+
     }
 }
